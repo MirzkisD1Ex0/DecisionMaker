@@ -3,6 +3,9 @@ using UnityEngine.UI;
 
 using DG.Tweening;
 
+/// <summary>
+/// 
+/// </summary>
 public class NewBehaviourScript : MonoBehaviour
 {
     public Text TextCmpt;
