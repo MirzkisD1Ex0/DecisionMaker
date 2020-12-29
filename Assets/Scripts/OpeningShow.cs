@@ -60,7 +60,7 @@ public class OpeningShow : MonoBehaviour
     /// </summary>
     public void StartAnimation()
     {
-        beginAnim = BeginRectCmpt.DOScale(new Vector3(0f, 0f, 0f), beginSpeed * .5f);
+        beginAnim = BeginRectCmpt.DOScale(new Vector3(1f, 0f, 1f), beginSpeed * .5f);
         beginAnim.OnComplete(() =>
         {
             ScaleAnimationPartOne();
@@ -121,7 +121,7 @@ public class OpeningShow : MonoBehaviour
     /// </summary>
     private void ScaleAnimationPartTwo()
     {
-        scaleAnim = ImageRectCmpt.DOSizeDelta(new Vector2(Screen.width, ImageRectCmpt.sizeDelta.y), scaleSpeed);
+        scaleAnim = ImageRectCmpt.DOSizeDelta(new Vector2(0f, ImageRectCmpt.sizeDelta.y), scaleSpeed);
         scaleAnim.OnComplete(() =>
         {
             ScaleAnimationPartThree();
