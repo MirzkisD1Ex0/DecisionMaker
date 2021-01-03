@@ -47,7 +47,7 @@ public class OpeningShow : MonoBehaviour
     private void BeginAnimation()
     {
         beginAnim.SetEase(Ease.Linear);
-        beginAnim = BeginRectCmpt.DOSizeDelta(new Vector2(240f, BeginRectCmpt.sizeDelta.y), beginSpeed);
+        beginAnim = BeginRectCmpt.DOSizeDelta(new Vector2(180f, BeginRectCmpt.sizeDelta.y), beginSpeed);
         beginAnim.OnComplete(() =>
         {
             BeginTextCmpt.DOFade(1f, beginSpeed);
@@ -73,7 +73,7 @@ public class OpeningShow : MonoBehaviour
     private void ScaleAnimationPartOne()
     {
         scaleAnim.SetEase(Ease.Linear);
-        scaleAnim = ImageRectCmpt.DOSizeDelta(new Vector2(ImageRectCmpt.sizeDelta.x, 130f), scaleSpeed);
+        scaleAnim = ImageRectCmpt.DOSizeDelta(new Vector2(ImageRectCmpt.sizeDelta.x, 120f), scaleSpeed);
         scaleAnim.OnComplete(() =>
         {
             TyperAnimation();
